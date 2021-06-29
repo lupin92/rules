@@ -4473,6 +4473,7 @@
 .quanta.la
 .adsturn.com
 .galatests.site
+.gldad.com
 .phicmune.net
 .toeschistache.com
 .advmusic.com
@@ -4863,6 +4864,7 @@
 .jtracking.lulusoft.com
 .liveadexchanger.com
 .track.pricespider.com
+.trungso.vip
 .webpower.eu
 .adntokyo.gunosy.com
 .apm.tnet.nl
@@ -4930,6 +4932,7 @@
 .ambientplatform.vn
 .analytics.ovh.com
 .baremetrics.com
+.beehiveclergyman.com
 .cwt.citywire.info
 .logconfig.polarisoffice.com
 .promos.fling.com
@@ -6271,6 +6274,7 @@
 .icdecidents.biz
 .krkursist.com
 .log.tinnhanhchungkhoan.vn
+.oadsouzi.net
 .sailif.com
 .spylog.com
 .viraltrackings.com
@@ -7108,6 +7112,7 @@
 .infopicked.com
 .larrenworld.pro
 .politegoldfish.com
+.rqkgcd.xyz
 .sevenedgesteve.com
 .sp.mycentraljersey.com
 .splitbee.io
