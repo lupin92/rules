@@ -1,0 +1,36 @@
+name: Generate routing rules
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * *'
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the default branch
+        uses: actions/checkout@v2.3.4
+
+      - name: Run Makefile
+        run: make
+
+      - name: Judge change or not
+        id: status
+        run: |
+            STR2="Changes not staged for commit"
+            out=$(git status)
+            if [[ "$(echo $out | grep "$STR2")" != "" ]]
+            then
+              echo "::set-output name=STATUS::"change""
+            fi
+
+      - name: Commit
+        run: |
+            if [[ "${{steps.status.outputs.STATUS}}" == "change" ]]
+            then
+              git config --local user.name "github-action[bot]"
+              git config --local user.email "69105878+lupin92@users.noreply.github.com"
+              git add .
+              git commit -m "Update" 
+              git push origin main
+            fi
